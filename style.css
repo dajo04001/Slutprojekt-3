@@ -1,0 +1,32 @@
+body{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 50px auto 50px;
+    grid-template-areas: 
+    "nav"
+    "header"
+    "main"
+    "footer";
+}
+
+nav{
+    grid-area: nav;
+}
+nav > ul{
+    display: grid;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    list-style-type: none;
+}
+
+nav li{
+    text-align: center;
+    background-color: antiquewhite;
+    line-height: 2.5;
+}
+
+nav a{
+    text-decoration: none;
+}
