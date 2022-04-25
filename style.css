@@ -12,6 +12,30 @@ body{
 nav{
     grid-area: nav;
 }
+header{
+    grid-area: header;
+}
+main{
+    grid-area: main;
+    display:grid;
+    grid-template-rows: auto auto;
+
+}
+main>section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    border: 1px solid pink;
+    grid-gap:10px;
+}
+
+main>section:first-of-type{
+    grid-template-columns: 60% 40%;
+}
+footer{
+    grid-area: footer;
+}
+
 nav > ul{
     display: grid;
     padding: 0;
